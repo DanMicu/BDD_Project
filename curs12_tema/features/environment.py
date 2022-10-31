@@ -1,6 +1,6 @@
 from browser import Browser
-from features.pages.signin_page import SignInPage
-from features.pages.signup_page import SignUpPage
+from curs12_tema.features.pages.signin_page import SignInPage
+from curs12_tema.features.pages.signup_page import SignUpPage
 
 
 def before_all(context):
