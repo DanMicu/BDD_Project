@@ -5,8 +5,7 @@ from behave import *
 
 @then("We are redirected to the sign up page")
 def step_impl(context):
-    expected_url = context.signup_page.URL
-    assert expected_url == context.browser.get_current_url()
+    assert context.signup_page.verify_url
 
 
 @then("We click log in")
@@ -18,5 +17,4 @@ def step_impl(context):
 
 @then("We are redirected to the sign in page")
 def step_impl(context):
-    expected_url = context.signin_page.URL
-    assert expected_url == context.browser.get_current_url()
+    assert context.signin_page.verify_url

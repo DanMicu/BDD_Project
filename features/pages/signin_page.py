@@ -21,3 +21,6 @@ class SignInPage(BasePage):
     def password_missing_error(self):
         password_error = (By.TAG_NAME, "p")
         return self.driver.find_element(*password_error)
+
+    def is_login_button_enabled(self):
+        return self.driver.find_element(By.XPATH, value="//button[@type='submit']").is_enabled()

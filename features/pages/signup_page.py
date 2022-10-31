@@ -37,3 +37,5 @@ class SignUpPage(BasePage):
     def login_button_selector(self):
         login_button = (By.XPATH, "//span[normalize-space()='Log In.']")
         return self.driver.find_element(*login_button)
+
+
